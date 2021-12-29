@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Licorice&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Licorice&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+
+:root {
+    --font_1: 'Open Sans Condensed', sans-serif;
+    --font_2: 'Licorice', cursive;
+    --colour_1: darkslateblue;
+    --colour_2: skyblue;
+    --colour_3: burlywood;
+    --colour_4: coral;
+}
+
+.espaço_top {
+    margin-top: 5px;
+}
+
+.corpo {
+    background-color: white;
+}
+
+.caixa {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-left: 8px;
+}
+
+.branco {
+    background-color: white;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: darkslateblue;
+}
+
+header > h1 {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+h1, header {
+    background-color: darkslateblue;
+}
+
+h1 {
+    color: var(--colour_3);
+    text-shadow: 1px 1px 1px black;
+    font-family: var(--font_1);
+    font-size: 80px;
+    font-weight: bold;
+}
+
+h2, h3 {
+    font-family: var(--font_2);
+    font-size: 50px;
+    padding: 5px;
+}
+
+h2 {
+    background-image: linear-gradient(to right, var(--colour_1), transparent);
+    padding-top: 15px;
+}
+
+h3 {
+    background-image: linear-gradient(to right, var(--colour_1), transparent);
+    padding-top: 15px;
+}
+
+section {
+    padding: 5px;
+    background-color: white;
+    display: inline-block;
+    font-weight: bolder;
+}
+
+section > a {
+    display: none;
+}
+
+section:hover {
+    background-color: burlywood;
+    color: coral;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+section:hover > a {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    font-size: 16px;
+}
+
+section:hover > a:hover {
+    background-color: skyblue;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: coral;
+    text-shadow: 1px 1px 1px black;
+}
+
+#caixa_div {
+    padding-bottom: 55px;
+}
+
+#corpo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#caixa_div_2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+div.corpo > p {
+    text-align: center;
+}

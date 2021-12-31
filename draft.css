@@ -132,3 +132,20 @@ a {
 div.corpo > p {
     text-align: center;
 }
+
+#rodapé {
+    outline: 1px solid darkslateblue;
+    margin-top: 1px;
+    padding-right: 5px;
+}
+
+div#foot {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    outline: 1px solid black;
+    display: inline-block;
+    margin-left: 3px;
+}

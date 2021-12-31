@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft</title>
+
+    <style>
+
+        #d1, #d2 {
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+        }
+
+        #d3 {
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+        }
+
+        #botão {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        input {
+            display: block;
+            margin: 10px;
+            margin-left: 0px;
+            outline: 1px solid black;
+        }
+
+        body {
+            background-color: burlywood;
+        }
+
+        p {
+            font-weight: bolder;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+        }
+
+    </style>
+
+    <script>
+
+        var cor, cor_2, cor_3, botão, botão_2, botão_3, text, p, reset
+
+        window.addEventListener('load', eventos)
+
+        function eventos() {
+            cor = document.querySelector('div#d1')
+            cor.addEventListener('mouseover', colour)
+
+            cor_2 = document.querySelector('div#d2')
+            cor_2.addEventListener('mouseover', colour_2)
+
+            cor_3 = document.querySelector('div#d3')
+            cor_3.addEventListener('mouseover', colour_3)
+
+            botão = document.getElementById('botão')
+            botão.addEventListener('click', retorno)
+
+            botão_2 = document.querySelector('input#botão_2')
+            botão_2.addEventListener('click', retorno_2)
+
+            botão_3 = document.querySelector('input#botão_3')
+            botão_3.addEventListener('click', retorno_3)
+
+            text = document.querySelectorAll('input')
+            text[3].addEventListener('click', switch_text)
+            p = document.querySelectorAll('p')
+
+            reset = document.querySelector('input#retorno')
+            reset.addEventListener('click', switch_text_return)
+        }
+
+        function colour() {
+            cor.style.backgroundColor = 'red'
+            cor.innerHTML = 'Vermelho'
+            cor.style.color = 'white'
+            cor.style.textShadow = '1px 1px 1px black'
+            cor.style.textAlign = 'center'
+            cor.style.lineHeight = '200px'
+        }
+
+        function colour_2() {
+            cor_2.style.backgroundColor = 'blue'
+            cor_2.innerHTML = 'Azul'
+            cor_2.style.color = 'white'
+            cor_2.style.textShadow = '1px 1px 1px black'
+            cor_2.style.textAlign = 'center'
+            cor_2.style.lineHeight = '200px'
+        }
+
+        function colour_3() {
+            cor_3.style.backgroundColor = 'green'
+            cor_3.innerHTML = 'Verde'
+            cor_3.style.color = 'white'
+            cor_3.style.textShadow = '1px 1px 1px black'
+            cor_3.style.textAlign = 'center'
+            cor_3.style.lineHeight = '200px'
+        }
+
+        function retorno() {
+            cor_3.style.backgroundColor = 'white'
+            cor_3.innerHTML = ''
+        }
+
+        function retorno_2() {
+            cor_2.style.backgroundColor = 'white'
+            cor_2.innerHTML = ''
+        }
+
+        function retorno_3() {
+            cor.style.backgroundColor = 'white'
+            cor.innerHTML = ''
+        }
+
+        function switch_text() {
+            p[0].innerHTML = 'Você clicou no botão "Texto".'
+        }
+
+        function switch_text_return() {
+            p[0].innerHTML = 'Oi! - Você clicou no botão "Resetar".'
+        }
+
+    </script>
+
+</head>
+
+<body>
+    
+    <input type="button" id="botão" value="1ª Botão">
+
+    <input type="button" id="botão_2" value="2ª Botão">
+
+    <input type="button" id="botão_3" value="3ª Botão">
+
+    <input type="button" id="texto" value="Texto">
+
+    <input type="button" id="retorno" value="Resetar">
+
+    <p id="p1">Olá!</p>
+
+    <div id="d1">Oi!</div>
+
+    <div id="d2">Olá, mundo!</div>
+
+    <div id="d3"></div>
+
+</body>
+
+</html>

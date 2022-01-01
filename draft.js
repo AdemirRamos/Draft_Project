@@ -1,4 +1,4 @@
-var caixa, caixa_2, caixa_3, caixa_4, caixa_5, caixa_6, area_1, area_2, area_3, area_4, area_5, button_1, button_2
+var caixa, caixa_2, caixa_3, caixa_4, caixa_5, caixa_6, area_1, area_2, area_3, area_4, area_5, button_1, button_2, button_3, button_4
 
 window.addEventListener('load', eventos)
 
@@ -48,6 +48,7 @@ function div_switch() {
     caixa.style.fontSize = '18px'
     caixa.style.color = 'coral'
     caixa.style.textShadow = '1px 1px 1px black'
+    caixa.style.cursor = 'pointer'
 }
 
 function div_switch_return() {
@@ -63,6 +64,7 @@ function div_switch_2() {
     caixa_2.style.lineHeight = '200px'
     caixa_2.style.color = 'coral'
     caixa_2.style.textShadow = '1px 1px 1px black'
+    caixa_2.style.cursor = 'pointer'
 }
 
 function div_switch_return_2() {
@@ -78,6 +80,7 @@ function div_switch_3() {
     caixa_3.style.lineHeight = '200px'
     caixa_3.style.color = 'coral'
     caixa_3.style.textShadow = '1px 1px 1px black'
+    caixa_3.style.cursor = 'pointer'
 }
 
 function div_switch_return_3() {
@@ -93,6 +96,7 @@ function div_switch_4() {
     caixa_4.style.lineHeight = '200px'
     caixa_4.style.color = 'coral'
     caixa_4.style.textShadow = '1px 1px 1px black'
+    caixa_4.style.cursor = 'pointer'
 }
 
 function div_switch_return_4() {
@@ -108,6 +112,7 @@ function div_switch_5() {
     caixa_5.style.lineHeight = '200px'
     caixa_5.style.color = 'coral'
     caixa_5.style.textShadow = '1px 1px 1px black'
+    caixa_5.style.cursor = 'pointer'
 }
 
 function div_switch_return_5() {
@@ -123,6 +128,7 @@ function div_switch_6() {
     caixa_6.style.lineHeight = '200px'
     caixa_6.style.color = 'coral'
     caixa_6.style.textShadow = '1px 1px 1px black'
+    caixa_6.style.cursor = 'pointer'
 }
 
 function div_switch_return_6() {
@@ -144,4 +150,12 @@ function colour_2() {
     area_3.style.backgroundColor = 'darkslateblue'
     area_4.style.backgroundColor = 'darkslateblue'
     area_5.style.backgroundColor = 'darkslateblue'
+}
+
+function pointer_1() {
+    button_3.style.cursor = 'pointer'
+}
+
+function pointer_2() {
+    button_4.style.cursor = 'pointer'
 }

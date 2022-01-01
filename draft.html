@@ -8,16 +8,12 @@
 
     <style>
 
-        #d1, #d2 {
+        #d1, #d2, #d3 {
             border: 1px solid black;
             width: 200px;
             height: 200px;
-        }
-
-        #d3 {
-            border: 1px solid black;
-            width: 200px;
-            height: 200px;
+            text-align: center;
+            line-height: 200px;
         }
 
         #botão {
@@ -46,11 +42,35 @@
             text-shadow: 1px 1px 1px black;
         }
 
+        #d4 {
+            outline: 1px solid black;
+            display: block;
+            margin-top: 10px;
+            margin-left: 3px;
+            padding: 1px;
+            width: 120px;
+        }
+
+        a {
+            display: block;
+            text-align: left;
+            text-shadow: 1px 1px 1px black;
+            text-decoration: underline;
+            font-size: 17px;
+            color: coral;
+            padding: 10px;
+            padding-top: 5px;
+        }
+
+        a:hover {
+            background-color: skyblue;
+        }
+
     </style>
 
     <script>
 
-        var cor, cor_2, cor_3, botão, botão_2, botão_3, text, p, reset
+        var cor, cor_2, cor_3, botão, botão_2, botão_3, botão_4, botão_5, text, p, reset
 
         window.addEventListener('load', eventos)
 
@@ -79,6 +99,16 @@
 
             reset = document.querySelector('input#retorno')
             reset.addEventListener('click', switch_text_return)
+
+            botão.addEventListener('mouseover', pointer)
+            botão_2.addEventListener('mouseover', pointer)
+            botão_3.addEventListener('mouseover', pointer)
+
+            botão_4 = document.querySelector('input#texto')
+            botão_4.addEventListener('mouseover', pointer)
+
+            botão_5 = document.querySelector('input#retorno')
+            botão_5.addEventListener('mouseover', pointer)
         }
 
         function colour() {
@@ -86,8 +116,10 @@
             cor.innerHTML = 'Vermelho'
             cor.style.color = 'white'
             cor.style.textShadow = '1px 1px 1px black'
+            cor.style.fontSize = '18px'
             cor.style.textAlign = 'center'
             cor.style.lineHeight = '200px'
+            cor.style.cursor = 'pointer'
         }
 
         function colour_2() {
@@ -95,8 +127,10 @@
             cor_2.innerHTML = 'Azul'
             cor_2.style.color = 'white'
             cor_2.style.textShadow = '1px 1px 1px black'
+            cor_2.style.fontSize = '18px'
             cor_2.style.textAlign = 'center'
             cor_2.style.lineHeight = '200px'
+            cor_2.style.cursor = 'pointer'
         }
 
         function colour_3() {
@@ -104,13 +138,23 @@
             cor_3.innerHTML = 'Verde'
             cor_3.style.color = 'white'
             cor_3.style.textShadow = '1px 1px 1px black'
+            cor_3.style.fontSize = '18px'
             cor_3.style.textAlign = 'center'
             cor_3.style.lineHeight = '200px'
+            cor_3.style.cursor = 'pointer'
         }
 
         function retorno() {
-            cor_3.style.backgroundColor = 'white'
-            cor_3.innerHTML = ''
+            cor.style.backgroundColor = 'white'
+            cor.innerHTML = ''
+        }
+
+        function pointer() {
+            botão.style.cursor = 'pointer'
+            botão_2.style.cursor = 'pointer'
+            botão_3.style.cursor = 'pointer'
+            botão_4.style.cursor = 'pointer'
+            botão_5.style.cursor = 'pointer'
         }
 
         function retorno_2() {
@@ -119,8 +163,8 @@
         }
 
         function retorno_3() {
-            cor.style.backgroundColor = 'white'
-            cor.innerHTML = ''
+            cor_3.style.backgroundColor = 'white'
+            cor_3.innerHTML = ''
         }
 
         function switch_text() {
@@ -128,7 +172,7 @@
         }
 
         function switch_text_return() {
-            p[0].innerHTML = 'Oi! - Você clicou no botão "Resetar".'
+            p[0].innerHTML = 'Você clicou no botão "Resetar".'
         }
 
     </script>
@@ -153,7 +197,9 @@
 
     <div id="d2">Olá, mundo!</div>
 
-    <div id="d3"></div>
+    <div id="d3">Hello</div>
+
+    <div id="d4"><a href="index.html" class="div">Home Page</a></div>
 
 </body>
 

@@ -28,6 +28,8 @@
     border: 1px solid black;
     margin-top: 50px;
     margin-left: 8px;
+    text-align: center;
+    line-height: 200px;
 }
 
 .branco {
@@ -146,6 +148,46 @@ div#foot {
 
 input {
     outline: 1px solid black;
-    display: inline-block;
+    display: block;
+    margin-top: 10px;
     margin-left: 3px;
+}
+
+section#rodapé:hover {
+    cursor: pointer;
+}
+
+div#div_footer {
+    outline: 1px solid black;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 3px;
+    padding: 1px;
+}
+
+a#a_footer {
+    display: block;
+    text-align: left;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: underline;
+    font-size: 17px;
+    padding: 10px;
+}
+
+a#a_footer:hover {
+    background-color: burlywood;
+}
+
+input#b1:hover {
+    cursor: pointer;
+}
+
+input#b2:hover {
+    cursor: pointer;
+}
+
+::selection {
+    background-color: coral;
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
